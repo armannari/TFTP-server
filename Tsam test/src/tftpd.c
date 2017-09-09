@@ -17,7 +17,7 @@
  #include <unistd.h>
  #endif
  
- #include "server.h"
+ int send_file( int socket_handle, struct sockaddr_in6 *client_address, const char *file_name );
  
  #define REQUEST_BUFFER_LENGTH 512
  
